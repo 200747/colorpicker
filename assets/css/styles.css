@@ -1,0 +1,97 @@
+/* General */
+#controls {
+    width: fit-content;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#rgb-value, #hex-value {
+    height: 85px;
+    color: #fff;
+    font-size: 10vmin;
+    font-weight: bold;
+    font-family: Montserrat;
+    text-align: center;
+    margin: 0;
+}
+
+#random-color-btn {
+    outline-style: none;
+    border-width: 0;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 12px 20px;
+    font-family: Montserrat;
+    font-size: large;
+    margin-top: 25px;
+}
+
+#explanation-copy {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 1.1rem;
+    margin: 0;
+    width: 100%;
+}
+
+body { background-color: #000; }
+
+/* Slider */
+.slide-container {
+    width: 100%;
+}
+
+.slider {
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: rgba(255, 255, 255, 0.7); /* White background */
+    outline: none; /* Remove outline */
+    border-radius: 20px;
+    opacity: 7.0;
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-hover */
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.slider::moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    cursor: pointer;
+}
+
+/* 'Copy'-text animation */
+@keyframes fade-in {        
+    from {
+      opacity : 0;
+      top : -30px;
+    }
+    to {
+      opacity : 1;
+      top : 0;
+    }      
+}
+  
+.run-animation {
+    font-size: 2.5rem !important;
+    color: #ebebeb !important;
+    position: relative;
+    animation: fade-in 0.8s ease;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This color picker website lets you pick or randomly generate a saturated color, so you can copy its color codes."/>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Opdracht 4 - Color picker</title>
+</head>
+<body onload="setRandomColor();">
+    <div class="slide-container">
+        <input oninput="changeBgColor();" type="range" min="0" max="1785" value="1" class="slider" id="hue-slider">
+    </div>
+    <div id="controls">
+        <div id="color-code-1"><p id="rgb-value">rgb(0, 0, 0)</p></div>
+        <br />
+        <div id="color-code-2"><p id="hex-value">#000000</p></div>
+        <br />
+        <p id="explanation-copy">Click on a color code to copy</p>
+        <button onclick="setRandomColor();" id="random-color-btn">Random color</button>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
