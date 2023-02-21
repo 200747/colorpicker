@@ -1,5 +1,7 @@
 // HTML (Interactive) elements
 const slider = document.getElementById('hue-slider');
+const slider2 = document.getElementById('sat-slider');
+const slider3 = document.getElementById('lig-slider');
 const rgbOutput = document.getElementById('rgb-value');
 const hexOutput = document.getElementById('hex-value');
 const ranColBtn = document.getElementById('random-color-btn');

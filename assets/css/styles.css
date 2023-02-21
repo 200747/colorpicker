@@ -57,11 +57,35 @@ body { background-color: #000; }
     transition: opacity .2s;
 }
 
-.slider:hover {
+.slider2 {
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: rgba(255, 255, 255, 0.7); /* White background */
+    outline: none; /* Remove outline */
+    border-radius: 20px;
+    opacity: 7.0;
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+.slider3 {
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: rgba(255, 255, 255, 0.7); /* White background */
+    outline: none; /* Remove outline */
+    border-radius: 20px;
+    opacity: 7.0;
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+.slider:hover, .slider2:hover, .slider3:hover {
     opacity: 1; /* Fully shown on mouse-hover */
 }
 
-.slider::-webkit-slider-thumb {
+.slider::-webkit-slider-thumb, .slider2::-webkit-slider-thumb ,.slider3::-webkit-slider-thumb {
     appearance: none;
     width: 25px;
     height: 25px;
@@ -70,7 +94,7 @@ body { background-color: #000; }
     cursor: pointer;
 }
 
-.slider::moz-range-thumb {
+.slider::moz-range-thumb, .slider2::moz-range-thumb, .slider3::moz-range-thumb  {
     width: 25px;
     height: 25px;
     background: #fff;
@@ -95,3 +119,8 @@ body { background-color: #000; }
     position: relative;
     animation: fade-in 0.8s ease;
 }
+
+.satcolor {
+    background-color:  transparent;
+  }
+  
